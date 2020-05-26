@@ -43,7 +43,5 @@ def kek():
 			print ('Nick изменен :)')
 		except:
 			print ('если имя не изменено значит вы забыли ввести команду "chmod 777 *"')
-
-if __name__ == '__main__':
-	ty()
-	kek()
+ty()
+kek()
