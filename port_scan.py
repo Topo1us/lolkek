@@ -4,7 +4,6 @@ import os
 def ty():
     x= os.system ('ifconfig>>IP2.txt')
     x= os.system ('clear')
-    x= os.system ('ls')
 ty()
 o=open(r'IP2.txt')
 y=o.read()
@@ -30,6 +29,7 @@ def openports(ip):
             sock.close()
         except:
             print('\033[31mпорт:: %s' % port, ':: закрыт')
+    os.system('rm -rf IP2.txt')
 def openports2():
     ip=input('IP: ')
     port=int(input('PORT: '))
@@ -42,11 +42,11 @@ def openports2():
             sock.close()
         except:
             print('\033[31mпорт:: %s' % lol, ':: закрыт')
-ty()
+    os.system('rm -rf IP2.txt')
 print('''
 \033[33mВыполнено........Termux Cod
 \033[36mАвторы...........\033[31m\033[3mWolFak...\033[35m\033[3mTopo1us
-\033[32m\033[0mСообщество вк...https://m.vk.com/termux_cod
+\033[0m\033[32mСообщество вк...https://m.vk.com/termux_cod
 ''')
 print('''
 \033[37m[1]Сканирование стандартных портов.
@@ -59,3 +59,4 @@ if x=='1':
 if x=='2':
 	openports2()
 ty()
+
