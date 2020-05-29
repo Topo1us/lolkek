@@ -2,10 +2,7 @@ import socket
 import smtplib
 import os
 def ty():
-    if os.name == 'nt':
-		_ = os.system ('cls')
-	else:
-		_ = os.system ('clear')
+	_ = os.system ('clear')
 try:
     smtpObj=smtplib.SMTP('smtp.gmail.com',587)
     smtpObj.starttls()
