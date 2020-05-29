@@ -47,6 +47,7 @@ def openports2():
             print('\033[31mпорт:: %s' % lol, ':: закрыт')
     po=str(input('lol~ '))
 print('''
+Ver-0.2
 \033[33mВыполнено........Termux Cod
 \033[36mАвторы...........\033[31m\033[3mWolFak...\033[35m\033[3mTopo1us
 \033[0m\033[32mСообщество вк...https://m.vk.com/termux_cod
