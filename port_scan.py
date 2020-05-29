@@ -1,8 +1,7 @@
-import socket
-import smtplib
 import os
 def ty():
     x= os.system ('ifconfig>>x.txt')
+    x= os.system ('pip install --upgrade pip')
     x= os.system ('pip install socket')
     x= os.system ('pip install smtplib')
     x= os.system ('clear')
