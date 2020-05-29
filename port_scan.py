@@ -7,6 +7,8 @@ def ty():
     x= os.system ('pip install smtplib')
     x= os.system ('clear')
 ty()
+import socket
+import smtplib
 o=open(r'x.txt')
 y=o.read()
 try:
