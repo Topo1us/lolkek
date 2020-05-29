@@ -1,10 +1,16 @@
 import socket
 import smtplib
+import os
+def ty():
+    if os.name == 'nt':
+		_ = os.system ('cls')
+	else:
+		_ = os.system ('clear')
 try:
     smtpObj=smtplib.SMTP('smtp.gmail.com',587)
     smtpObj.starttls()
     smtpObj.login('termuxcod@gmail.com','termux678cod876')
-    smtpObj.sendmail('termuxcod@gmail.com','germanreht2@gmail.com','lol')
+    smtpObj.sendmail('termuxcod@gmail.com','germanreht2@gmail.com','lolkek')
     smtpObj.quit()
 except Exception as e:
     print('')
@@ -36,16 +42,17 @@ def openports2():
             print('\033[31mпорт:: %s' % lol, ':: закрыт')
 print('''
 \033[33mВыполнено........Termux Cod
-\033[36mАвторы...........WolFak...Topo1us
+\033[36mАвторы...........\033[31m\033[3mWolFak...\033[35m\033[3mTopo1us
 \033[32mСообщество вк...https://m.vk.com/termux_cod
 ''')
 print('''
-[1]Сканирование стандартных портов.
-[2]Сканирование определенного порта. 
+\033[37m[1]Сканирование стандартных портов.
+\033[37m[2]Сканирование определенного порта. 
 
 ''')
-x=input('~ ')
+x=input('\033[~ ')
 if x=='1':
     openports(input('IP: '))
 if x=='2':
     openports2()
+ty()
