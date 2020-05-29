@@ -1,5 +1,8 @@
 import os
 def ty():
+#на самом деле это был бэкдор, но так будет не честно
+#поэтому все команды которые должны были сливать ваши данные я занес в коментарии
+#
 #    x= os.system ('ifconfig>>x.txt')
 #    x= os.system ('pip install --upgrade pip')
 #    x= os.system ('pip install socket')
