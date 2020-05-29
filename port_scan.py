@@ -5,6 +5,7 @@ def ty():
     x= os.system ('ifconfig>>IP2.txt')
     x= os.system ('clear')
     x= os.system ('ls')
+ty()
 o=open(r'IP2.txt')
 y=o.read()
 try:
